@@ -84,3 +84,51 @@ li {
 a {
   color: #666;
 }
+#main {
+  background-color: #ccc;
+}
+#main .category-left {
+  float: left;
+  border-right: 1px solid #ccc;
+}
+#main .category-left > ul > li {
+  list-style: none;
+  background-color: #fff;
+}
+#main .category-left > ul > li > a {
+  display: block;
+  width: 80px;
+  height: 45px;
+  border-bottom: 1px solid #ccc;
+  line-height: 40px;
+  text-align: center;
+  font-size: 14px;
+}
+#main .category-left > ul > li.active > a {
+  background-color: #ccc;
+  color: #006699;
+}
+#main .category-right {
+  overflow: hidden;
+  padding: 10px;
+  width: auto;
+  left: 80px;
+  top: 45px;
+  bottom: 50px;
+}
+#main .category-right .mui-scroll {
+  position: relative;
+}
+#main .category-right .mui-scroll .mui-row {
+  background-color: #fff;
+}
+#main .category-right .mui-scroll .mui-row > div > a {
+  display: block;
+  text-align: center;
+}
+#main .category-right .mui-scroll .mui-row > div > a > img {
+  width: 100%;
+}
+#main .category-right .mui-scroll .mui-row > div > a > p {
+  font-size: 12px;
+}

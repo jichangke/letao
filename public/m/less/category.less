@@ -1,0 +1,59 @@
+@import 'base.less';
+#main {
+    background-color: #ccc;
+    .category-left {
+        float: left;
+        border-right: 1px solid #ccc;                   
+        
+        >ul{
+            >li{
+                list-style: none;
+                background-color: #fff;
+                >a{
+                    display: block;                    
+                    width: 80px;
+                    height: 45px;
+                    border-bottom: 1px solid #ccc;
+                    line-height: 40px;
+                    text-align: center;
+                    font-size: 14px;
+                }
+                &.active{
+                    >a{
+                        background-color: #ccc;
+                        color: @main-color;
+                    }
+                }
+            }
+        }
+    }
+    .category-right{
+        overflow: hidden;
+        padding: 10px;
+        width: auto;
+        left: 80px;
+        top:45px;
+        bottom: 50px;
+        .mui-scroll{
+            position: relative;
+            .mui-row{
+            background-color: #fff;
+            
+                >div{
+                    >a{
+                    display: block;
+                    text-align: center;
+                    >img{
+                        
+                        width: 100%;
+                    }
+                    >p{
+                    
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+    }
+}

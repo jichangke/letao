@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link type="image/x-icon" rel="shortcut icon" href="images/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="lib/mui/css/mui.css">
+    <link rel="stylesheet" href="lib/fontAwesome/css/font-awesome.css">
+    <link rel="stylesheet/less" href="less/category.less">
+    <script src="lib/less/less.js"></script>
+</head>
+
+<body>
+    <!-- 头部 -->
+    <header id="header">
+        <a href="#" class="fa fa-arrow-left"></a>
+        <form action="">
+            <input type="search" placeholder="搜索">
+        </form>
+        <a href="#" class="fa fa-search-plus"></a>
+    </header>
+    <main id="main">
+        <div class="category-left">
+            <ul>
+                <li class="active">
+                    <a href="#">运动馆1</a>
+                </li>
+            </ul>
+        </div>
+        <div class="category-right mui-scroll-wrapper">
+            <div class="mui-scroll">
+                <div class="mui-row">
+                    <div class="mui-col-xs-4">
+                        <a href="">
+                            <img src="./images/brand1.png" alt="">
+                            <p>耐克</p>
+                        </a>
+                    </div>
+                    <div class="mui-col-xs-4">
+                        <a href="">
+                            <img src="./images/brand2.png" alt="">
+                            <p>耐克</p>
+                        </a>
+                    </div>
+                    <div class="mui-col-xs-4">
+                        <a href="">
+                            <img src="./images/brand3.png" alt="">
+                            <p>耐克</p>
+                        </a>
+                    </div>
+                    <div class="mui-col-xs-4">
+                        <a href="">
+                            <img src="./images/brand4.png" alt="">
+                            <p>耐克</p>
+                        </a>
+                    </div>
+                    <div class="mui-col-xs-4">
+                        <a href="">
+                            <img src="./images/brand5.png" alt="">
+                            <p>耐克</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- 脚部 -->
+    <footer id="footer">
+        <div class="mui-row">
+            <div class=" mui-col-xs-3">
+
+                <a class=" fa fa-home active">
+                    首页
+                </a>
+
+            </div>
+            <div class=" mui-col-xs-3">
+
+                <a class="fa fa-bars">
+                    分类
+                </a>
+
+            </div>
+            <div class="mui-col-xs-3">
+                <a class="fa fa-shopping-cart">
+                    购物
+                </a>
+            </div>
+            <div class=" mui-col-xs-3">
+                <a class="fa fa-user">
+                    个人
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script id="categoryLeftTmp" type="text/html">
+        {{each rows as value i}}
+            <li><a href="#" data-id='{{value.id}}'>{{value.categoryName}}</a></li>
+        {{/each}}
+    </script>
+    <script id="categoryRightTmp" type="text/html">
+        <div class="mui-row">
+            {{each rows as value i}}
+            <div class="mui-col-xs-4">
+                <a href="#">
+                    <img src="{{value.brandLogo}}" alt="">
+                    <p>{{value.brandName}}</p>
+                </a>
+            </div>
+        {{/each}}
+        </div>        
+    </script>
+    <script src="lib/zepto/zepto.min.js"></script>
+    <script src="lib/mui/js/mui.js"></script>
+    <script src="lib/artTemplate/template.js"></script>
+    <script src="js/category.js"></script>
+</body>
+
+</html>

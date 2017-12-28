@@ -14,11 +14,30 @@
         line-height: 45px;
         font-weight: normal;
     }
+    .fa-arrow-left{
+    	position: absolute;
+    	left: 10px;
+    	top: 14px;
+    	color:#fff;
+    }
     .fa-search-plus{
     color: #fff;
     position: absolute;
     top: 14px;
-    right:20px;
+    right:10px;
+    }
+    form {
+        padding-left: 35px;
+        padding-right: 35px;
+        >input{
+            text-align: left;
+            width: 100%;
+            background-color: #fff;
+            height: 30px;
+            margin-top: 7px;
+            font-size: 14px;
+            color: #000;
+        }
     }
 }
 #footer {
@@ -55,4 +74,28 @@ html,body {
     padding-bottom: 50px;
     height: 100%;
     background-color: #fff;
+}
+// 字体图标的公共样式
+// [class^="fa-"]{
+//     display: inline-block;
+//     font: normal normal normal 14px/1 FontAwesome;
+//     font-size: inherit;
+//     text-rendering: auto;
+//     -webkit-font-smoothing:antialiased;
+// }
+
+*{
+	margin: 0px;
+	padding: 0px;
+}
+img {
+    /* 解决图片3px的间隙 */
+    vertical-align: middle;
+}
+li{
+	/* 去掉小圆点 */
+	list-style: none;
+}
+a{
+	color:#666;
 }
